@@ -38,5 +38,9 @@ useState():
 
  whenever a state variable changes react re render its component
 
-useEffect(): 
+useEffect(): useEffect is react Hook .\
+ it takes two arguments.
+
+ a call back function.
+ a dependency array.
 

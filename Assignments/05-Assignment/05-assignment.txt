@@ -1,5 +1,7 @@
+Ep 05: Let's get Hooked!
 
-  ● What is the difference between Named Export, Default export and * as export?
+
+● What is the difference between Named Export, Default export and * as export?
 
 Default Export:
 
