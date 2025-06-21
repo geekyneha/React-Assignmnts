@@ -1,5 +1,5 @@
 Episode 07: Finding the path.
-
+ Notes
 useEffect:
 
 -if theres no dependency array useEffect get called after every render.
