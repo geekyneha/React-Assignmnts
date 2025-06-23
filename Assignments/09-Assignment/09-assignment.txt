@@ -16,7 +16,13 @@ Why we get error. A component suspended while responding to synchronous input. T
 
 This Happens when a lazy-loaded component takes time to load, but React expects the update to be instant (sync) like during input and click.
 
-to fix that 
+To fix this, wrap the update using:
+
+js
+startTransition(() => {
+  // your update or route change
+});
+This tells React: "This is not urgent — you can show fallback while it's loading."
 
 Advantages and disadvantages of using code splitting pattern.
 
