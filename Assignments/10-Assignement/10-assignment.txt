@@ -1,0 +1,63 @@
+Chapter 10 - Jo dikhta hai vo bikta hai
+Theory:
+
+● Explore all the ways of writing css.
+  - using styled component.
+
+    -material ui 
+    - chakra ui
+    - ant design
+    - lucid ui
+    - shadcn ui
+  diff library and Framework
+  - tailwind 
+  - bootstrap  
+ using SaSS, Scss and more.
+ 
+● How do we configure tailwind?
+ 
+  -npm install tailwindcss @tailwindcss/postcss
+  -create .postcssrc
+  - add   
+        "plugins": {
+            "@tailwindcss/postcss": {}
+        }
+- import tailwind in index.css
+
+● In tailwind.config.js, what does all the keys mean (content, theme, extend,
+plugins)?
+
+  (i) content : Tells tailwind where to look for class names
+               Helps it removing unused styles (Tree shaking)
+
+             This helps it remove unused styles (tree shaking).
+  
+          content: ["./src/**/*.{js,jsx,ts,tsx}"]  
+          
+  (ii) Theme : defines default design value  like  font, color, spacing.
+            theme : {
+                colors:{
+                    blue: '#1DA1F2',
+                },
+            }  
+  (iii) extend : use when you want to add default tailwind theme instead of replacing it.
+
+  (iv)  plugins : Allow to add third-party or custom plugins . (forms, typography) 
+            plugins: [
+            require('@tailwindcss/forms'),
+            ], 
+
+● Why do we have .postcssrc file?
+   Tailwind uses PostCss under the hood, which is a tool that transforms css.
+   Using tailwing as a plugin.
+   Minifying unused tailwind classes.
+   Enabling other postCss plugin if needed.
+   It helps make the final CSS file smaller and optimized
+
+
+File / Key	            Purpose
+content      	      Tell Tailwind where to scan for class names
+theme	              Customize default design tokens
+extend	              Add to default theme without removing originals
+plugins	              Add extra functionality (e.g. forms, animations)
+postcss.config.js	  Runs Tailwind + minifies final CSS output
